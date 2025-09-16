@@ -4,12 +4,109 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Manushi Goel – Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --card-bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --radius: 14px;
+      --shadow: 0 6px 18px rgba(0,0,0,0.08);
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header.site-header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header .avatar-lg {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow);
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+    header .tagline {
+      font-size: 1.1rem;
+      color: #e0e7ff;
+      margin-bottom: 0.5rem;
+    }
+    header a {
+      color: #facc15;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: 500;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+    main.container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+    }
+    section h3 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: #374151;
+    }
+    ul {
+      margin-left: 1.2rem;
+      list-style-type: disc;
+    }
+    li { margin-bottom: 0.5rem; }
+    footer.site-footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    footer.site-footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      header .tagline { font-size: 1rem; }
+      header .avatar-lg { width: 90px; height: 90px; }
+      section { padding: 1rem; }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <img src="https://media.licdn.com/dms/image/v2/D4D03AQF1Xe6qk6Pp9A/profile-displayphoto-shrink_400_400/0/1700206508942?e=1736380800&v=beta&t=8PqXq6n6GJ8T0dZb6q_Uglp3Yj0OaUdcqpMXz4D2r1E" alt="Manushi Goel" class="avatar-lg">
+      <img src="https://media.licdn.com/dms/image/D4D03AQF1Xe6qk6Pp9A/profile-displayphoto-shrink_400_400/0/1700206508942?e=1736380800&v=beta&t=8PqXq6n6GJ8T0dZb6q_Uglp3Yj0OaUdcqpMXz4D2r1E" 
+           alt="Manushi Goel" class="avatar-lg">
       <h1>Manushi Goel</h1>
       <p class="tagline">MBA Candidate at BitSom | Ex-Actuarial Consultant, Willis Towers Watson | Entrepreneurial & Creative</p>
       <p>
@@ -52,7 +149,7 @@
     <section>
       <h2>Entrepreneurship</h2>
       <ul>
-        <li><strong>Organic Community Store</strong>: Realized ₹620K sales; reduced ops costs by 20%; GTM with 24 Mantra & Nutty Yogi:contentReference[oaicite:1]{index=1}.</li>
+        <li><strong>Organic Community Store</strong>: Realized ₹620K sales; reduced ops costs by 20%; GTM with 24 Mantra & Nutty Yogi.</li>
         <li><strong>Art & Merchandise (Linearoundyourthoughts)</strong>: ₹50K revenue; 2630+ avg impressions; 35% sales increase.</li>
       </ul>
     </section>
